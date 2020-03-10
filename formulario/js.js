@@ -104,8 +104,8 @@ function agregarV(){
             +"<td class = 'col-1'>"+"171"+"</td>"
             +"<td class = 'col-1'>"+"19"+"</td>"
             +"<td class = 'col-2'>"+"Colombia"+"</td>"
-            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
-            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
+            +"<td class = 'col-'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
+            +"<td class = 'col-'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
             +"</tr>"
             +"<tr class = 'row'>"
             +"<td class = 'col-1'>"+"158"+"</td>"
@@ -113,8 +113,8 @@ function agregarV(){
             +"<td class = 'col-1'>"+"195"+"</td>"
             +"<td class = 'col-1'>"+"33"+"</td>"
             +"<td class = 'col-2'>"+"Venezuela"+"</td>"
-            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
-            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
+            +"<td class = 'col-'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
+            +"<td class = 'col-'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
             +"</tr>"
         );
     });
