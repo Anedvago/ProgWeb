@@ -15,23 +15,25 @@ function añadir(){
      var edad = $("#edad");
      var localidad = $("#localidad");
 
-     $("#tabla").append(
-        "<tr class='row'>"+
-        "<td class='col-1'>"+nSocio.val()+"</td>"+
-        "<td class='col-3'>"+nombre.val()+"</td>"+
-        "<td class='col-1'>"+estatura.val()+"</td>"+
-        "<td class='col-1'>"+edad.val()+"</td>"+
-        "<td class='col-2'>"+localidad.val()+"</td>"+
-        "<td class='col-'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"+
-        "<td class='col-'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"+
-        "</tr>");
+     if(nSocio.val().length >0 && nombre.val().length >0 && estatura.val().length >0 && edad.val().length >0 && localidad.val().length >0){
+        $("#tabla").append(
+            "<tr class='row'>"+
+            "<td class='col-1'>"+nSocio.val()+"</td>"+
+            "<td class='col-3'>"+nombre.val()+"</td>"+
+            "<td class='col-1'>"+estatura.val()+"</td>"+
+            "<td class='col-1'>"+edad.val()+"</td>"+
+            "<td class='col-2'>"+localidad.val()+"</td>"+
+            "<td class='col-'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"+
+            "<td class='col-'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"+
+            "</tr>");
 
-        nSocio.val("") ;
-        nombre.val("") ;
-        estatura.val("") ;
-        edad.val("") ;
-        localidad.val("") ;
-    });  
+            nSocio.val("") ;
+            nombre.val("") ;
+            estatura.val("") ;
+            edad.val("") ;
+            localidad.val("") ;
+        }
+    }); 
 };
 
 function borrar(){
