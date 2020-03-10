@@ -3,6 +3,7 @@ $(function(){
     borrar();
     modificar();
     guardar();
+    agregarV();
 
 });
 
@@ -92,3 +93,29 @@ function guardar(){
         botonm.html('<button type="button" class="btn btn-primary modificar">Modificar</button>')
     });
 };
+
+function agregarV(){
+    $("#agregarV").on("click",function(e){
+        e.preventDefault();
+        $("#tabla").append(
+            "<tr class = 'row'>"
+            +"<td class = 'col-1'>"+"123"+"</td>"
+            +"<td class = 'col-3'>"+"juan Perez"+"</td>"
+            +"<td class = 'col-1'>"+"171"+"</td>"
+            +"<td class = 'col-1'>"+"19"+"</td>"
+            +"<td class = 'col-2'>"+"Colombia"+"</td>"
+            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
+            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
+            +"</tr>"
+            +"<tr class = 'row'>"
+            +"<td class = 'col-1'>"+"158"+"</td>"
+            +"<td class = 'col-3'>"+"Pedro Martinez"+"</td>"
+            +"<td class = 'col-1'>"+"195"+"</td>"
+            +"<td class = 'col-1'>"+"33"+"</td>"
+            +"<td class = 'col-2'>"+"Venezuela"+"</td>"
+            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary modificar">Modificar</button>'+"</td>"
+            +"<td class = 'col-2'>"+'<button type="button" class="btn btn-primary eliminar" >Eliminar</button>'+"</td>"
+            +"</tr>"
+        );
+    });
+}
