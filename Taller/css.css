@@ -1,13 +1,32 @@
 #t{
-    padding: 20px;
-    background-color:grey;
-    margin-bottom: 20px;
+    background-color:darkblue;
+    
     
 }
 #titulo{
-    color: black;
+    color: white;
     text-align: left;
+    padding-top: 25px;
+    font-family: "Bauhaus 93";
+    font-size: 70px;
 }
-#am{
+#am,#lsp{
     text-align: center;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    
+}
+#menu{
+    padding: 10px;
+    background-color: lightblue;
+}
+.b{
+    background-color: black;
+    border-color: black;
+}
+#banner{
+    margin-top: 10px;
+    width: 100%;
 }

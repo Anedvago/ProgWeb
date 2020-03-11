@@ -9,96 +9,146 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Club de Baketball</title>
+    <title>Clinica de Mascotas</title>
         <link rel="stylesheet" type="text/css" href="./css.css">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-      <div class="container-fluid">
-          <div class="row" id = "t">
-              <div class="col-12"><h1 id="titulo">Clinica De Mascotas</h1></div>
-          </div>
-          <div class="row">
-              <div class="col" id = "menu">
-                <div class="btn-group " role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary">Incio</button>
-                    <button type="button" class="btn btn-secondary" >Listar Propietario</button>
-                    <button type="button" class="btn btn-secondary">Agregar Mascota</button>
-                </div>
+        <div class="container-fluid" id="inicio">
+            <div class="row" id = "t">
+                <div class="col-10"><h1 id="titulo">Clinica De Mascotas</h1></div>
+                <div class="col-2"><img src="./img/logo.png" id="logo"></div>
             </div>
-        </div>
-        <div class="row"><div class="col"><h2 id="am">Agregar Mascota</h2></div></div>
-        <div class="row"><div class="col"><h3 id="lp">Listado Propietarios</h3></div></div>
-        <div class="row">
-            <div class="col-7">
-                <table class="table" id="tabla">
-                    <thead class="thead-dark">
-                      <tr class="row">
-                        <th class="col">Nombre</th>
-                        <th class="col">Apellido</th>
-                        <th class="col">Direccion</th>
-                        <th class="col">Telefono2</th>
-                        <th class="col">Opcion</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="row">
-                        <td class="col"></td>
-                        <td class="col"></td>
-                        <td class="col"></td>
-                        <td class="col"></td>
-                        <td class="col"></td>
-
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <div class="row"><h3>Agregar Propietario</h3></div>
-                        <form>
-                            <div class="form-group row">
-                              <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
-                              <div class="col-sm-10">
-                                <input type="text" class="form-control form-control-sm" id="nombre" >
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Apellido</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control form-control-sm" id="apellido" >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Direccion</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control form-control-sm" id="direccion" >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Telefono</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control form-control-sm" id="telefono" >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <button type="submit" class="btn btn-primary mb-2" id="agregar">Agregar</button>
-                            </div>
-                          </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" id = "st">
-                        <form id="sf">
-                        </form>
+            <div class="row">
+                <div class="col" id = "menu">
+                    <div class="btn-group " role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary b" id="bi">Incio</button>
+                        <button type="button" class="btn btn-secondary b" id="bl">Listar Propietario</button>
+                        <button type="button" class="btn btn-secondary b" id="bam">Agregar Mascota</button>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col"><img src="./img/banner.jpg" id="banner"></div>
+            </div>
+            <div class="row"><div class="col"><h2 id="am">Agregar Mascota</h2></div></div>
+            <div class="row"><div class="col"><h2 id="lsp">Listar Propietarios</h2></div></div>
+            <div class="row"><div class="col"><h3 id="lp">Listado De Propietarios</h3></div></div>
+            <div class="row" id="contenido">
+                <div class="col-7">
+                    <table class="table" id="tabla">
+                        <thead class="thead-dark">
+                          <tr class="row">
+                            <th class="col">Nombre</th>
+                            <th class="col">Apellido</th>
+                            <th class="col">Direccion</th>
+                            <th class="col">Telefono</th>
+                            <th class="col">Opcion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row">
+                                <td class="col">Juan</td>
+                                <td class="col">Perez</td>
+                                <td class="col">Calle 45</td>
+                                <td class="col">3090394843</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Jorge</td>
+                                <td class="col">Gonzales</td>
+                                <td class="col">Calle 56</td>
+                                <td class="col">3456567878</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Maria</td>
+                                <td class="col">Machado</td>
+                                <td class="col">Calle 76</td>
+                                <td class="col">3454444878</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1"></div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row"><h3>Agregar Propietario</h3></div>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="nombre" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Apellido</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="apellido" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Direccion</label>
+                                        <div class="col-sm-10">
+                                           <input type="text" class="form-control form-control-sm" id="direccion" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Telefono</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="telefono" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <button type="submit" class="btn btn-primary mb-2" id="agregar">Agregar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col" id = "st">
+                            <form id="sf">
+                                <div class = "row"><h3>Agregar Mascota</h3></div>
+                                <div class = "row" id="propietario"></div>
+                                <div class="form-group row">
+                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control form-control-sm" id="nombreM" >
+                                    </div>  
+                                </div>
+                                <div class="form-group row">
+                                   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Tipo</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="tipoM">
+                                            <option value = "perro">Perro</option>
+                                            <option value = "gato">Gato</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">F/N</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" class="form-control form-control-sm" id="fn" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button type="submit" class="btn btn-primary mb-2" id="agregarM">Agregar</button>
+                                </div>
+                                <div class="row">
+                                    <div class="col" id="aqtab">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
 
         </div>
 
-      </div>
     <!-- Optional JavaScript -->
     <script type="text/JavaScript" src="./js.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
