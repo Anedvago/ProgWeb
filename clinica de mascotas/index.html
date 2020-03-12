@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Clinica de Mascotas</title>
+        <link rel="stylesheet" type="text/css" href="./css.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+        <div class="container-fluid" id="inicio">
+            <div class="row" id = "t">
+                <div class="col-10"><h1 id="titulo">Clinica De Mascotas</h1></div>
+                <div class="col-2"><img src="./img/logo.png" id="logo"></div>
+            </div>
+            <div class="row">
+                <div class="col" id = "menu">
+                    <div class="btn-group " role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary b" id="bi">Incio</button>
+                        <button type="button" class="btn btn-secondary b" id="bl">Listar Propietario</button>
+                        <button type="button" class="btn btn-secondary b" id="bam">Agregar Mascota</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="./img/banner.jpg" id="banner"></div>
+            </div>
+            <div class="row"><div class="col"><h2 id="am">Agregar Mascota</h2></div></div>
+            <div class="row"><div class="col"><h2 id="lsp">Listar Propietarios</h2></div></div>
+            <div class="row"><div class="col"><h3 id="lp">Listado De Propietarios</h3></div></div>
+            <div class="row" id="contenido">
+                <div class="col-7">
+                    <table class="table" id="tabla">
+                        <thead class="thead-dark">
+                          <tr class="row">
+                            <th class="col">Nombre</th>
+                            <th class="col">Apellido</th>
+                            <th class="col">Direccion</th>
+                            <th class="col">Telefono</th>
+                            <th class="col">Opcion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row">
+                                <td class="col">Juan</td>
+                                <td class="col">Perez</td>
+                                <td class="col">Calle 45</td>
+                                <td class="col">3090394843</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Jorge</td>
+                                <td class="col">Gonzales</td>
+                                <td class="col">Calle 56</td>
+                                <td class="col">3456567878</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Maria</td>
+                                <td class="col">Machado</td>
+                                <td class="col">Calle 76</td>
+                                <td class="col">3454444878</td>
+                                <td class="col"><a href="#" class="agmasc">Agregar mascota</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1"></div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row"><h3 id="agp">Agregar Propietario</h3></div>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="nombre" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Apellido</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="apellido" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Direccion</label>
+                                        <div class="col-sm-10">
+                                           <input type="text" class="form-control form-control-sm" id="direccion" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Telefono</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control form-control-sm" id="telefono" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" id="add">
+                                        <button type="submit" class="btn btn-primary mb-2" id="agregar">Agregar</button>
+                                        <button type="submit" class="btn btn-primary mb-2" id="editar">Editar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col" id = "st">
+                            <div class="row">
+                                <div class="col">
+                                    <form id="sf">
+                                        <div class = "row"><h3>Agregar Mascota</h3></div>
+                                            <div class = "row" id="propietario"></div>
+                                                <div class="form-group row">
+                                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control form-control-sm" id="nombreM" >
+                                                    </div>  
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Tipo</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control" id="tipoM">
+                                                            <option value = "perro">Perro</option>
+                                                            <option value = "gato">Gato</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">F/N</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="date" class="form-control form-control-sm" id="fn" >
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <button type="submit" class="btn btn-primary mb-2" id="agregarM">Agregar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="aqtab">
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col" id="pr">
+                                <table class="table" id ="tabla2">
+                                  <thead class="thead-dark">
+                                      <tr class="row">
+                                          <th class="col">Nombre</th>
+                                          <th class="col">Tipo</th>
+                                          <th class="col">F/N</th>
+                                          <th class="col"> </th>
+                                      </tr>
+                                  </thead>
+                                  <tr class="row bby" >
+                                      <td class="col">tato</td>
+                                      <td class="col">Perro</td>
+                                      <td class="col">22/04/2000</td>
+                                      <td class="col"><a href="#" class="editM" id = "e">Editar</a></td>
+                                  </tr>
+                                  <tr class="row bby" >
+                                      <td class="col">roki</td>
+                                      <td class="col">Perro</td>
+                                      <td class="col">23/06/2010</td>
+                                      <td class="col"><a href="#" class="editM">Editar</a></td>
+                                  </tr>
+                                  <tr class="row bby">
+                                      <td class="col">michi</td>
+                                      <td class="col">gato</td>
+                                      <td class="col">01/04/2016</td>
+                                      <td class="col"><a href="#" class="editM">Editar</a></td>
+                                  </tr>
+                              </table>
+
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/JavaScript" src="./js.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
